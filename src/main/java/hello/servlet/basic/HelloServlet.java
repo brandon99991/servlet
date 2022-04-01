@@ -12,9 +12,19 @@ public class HelloServlet extends HttpServlet {
 
     // Ctrl + O => service
     @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //super.service(req, resp);
         // soutm
         System.out.println("HelloServlet.service");
+        // soutv
+        System.out.println("req = " + request);
+        System.out.println("resp = " + response);
+
+        String username = request.getParameter("username");
+        System.out.println("username = " + username);
+
+        response.setContentType("text/plain");
+        response.setCharacterEncoding("utf-8");
+        response.getWriter().write("hello "  + username);
     }
 }
