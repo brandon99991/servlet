@@ -21,3 +21,7 @@
 // 변수 추가 단축키 예 (ctrl+alt+v)
 1) request.getInputStream();  Typing후에 단축키(ctrl+alt+v)입력
 2) ServletInputStream inputStream = request.getInputStream();
+
+// print 단축키 : soutv
+1) String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8); Typing후에 단축키(soutv)입력
+2) System.out.println("messageBody = " + messageBody);
