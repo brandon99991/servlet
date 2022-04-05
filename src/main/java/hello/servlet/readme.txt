@@ -25,3 +25,6 @@
 // print 단축키 : soutv
 1) String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8); Typing후에 단축키(soutv)입력
 2) System.out.println("messageBody = " + messageBody);
+
+// import class 단축키 : alt+shift+enter
+Cookie cookie = new Cookie("myCookie", "good");
