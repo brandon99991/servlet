@@ -28,3 +28,23 @@
 
 // import class 단축키 : alt+shift+enter
 Cookie cookie = new Cookie("myCookie", "good");
+
+// 생성자 단축키 : alt + ins > Constructor > choose fields
+        import lombok.Getter;
+        import lombok.Setter;
+
+        @Getter @Setter
+        public class Member {
+
+            private Long id;
+            private String username;
+            private int age;
+
+            //-- 여기서 생성자 단축키 사용시 아래와 같이 생성됨.
+            public Member(String username, int age) {
+                this.username = username;
+                this.age = age;
+            }
+        }
+
+// junit 테스트 클래스 생성 단축키 : ctrl + shift + t
