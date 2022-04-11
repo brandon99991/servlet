@@ -48,3 +48,5 @@ Cookie cookie = new Cookie("myCookie", "good");
         }
 
 // junit 테스트 클래스 생성 단축키 : ctrl + shift + t
+
+// 최근 파일로 이동할 때 단축키 : ctrl + e
